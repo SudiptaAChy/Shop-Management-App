@@ -8,6 +8,7 @@ import 'package:jomakhoroch/View/bikrir_khata.dart';
 import 'package:jomakhoroch/View/contact_list.dart';
 import 'package:jomakhoroch/View/dashboard.dart';
 import 'package:jomakhoroch/View/digital_payment.dart';
+import 'package:jomakhoroch/View/hishab_khata.dart';
 import 'package:jomakhoroch/View/marketing.dart';
 import 'package:jomakhoroch/View/online_store.dart';
 import 'package:jomakhoroch/View/report.dart';
@@ -511,7 +512,7 @@ class _HomeState extends State<Home> {
                     Card(
                       child: InkWell(
                         onTap: () {
-                          Get.to(DashBoard());
+                          Get.to(HishabKhata());
                         },
                         child: Container(
                           color: Colors.white,

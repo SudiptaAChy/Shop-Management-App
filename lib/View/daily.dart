@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class Daily extends StatefulWidget {
   final String cntS, totalS, cntC, totalC, cntB, totalB;
-  Daily(this.cntS, this.totalS, this.cntC, this.totalC, this.cntB, this.totalB);
+  const Daily(
+      this.cntS, this.totalS, this.cntC, this.totalC, this.cntB, this.totalB);
 
   @override
   _DailyState createState() => _DailyState();
