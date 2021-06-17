@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:jomakhoroch/Controller/my_profile_controller.dart';
 import 'package:jomakhoroch/View/bakir_khata.dart';
 import 'package:jomakhoroch/View/becha_bikri.dart';
 import 'package:jomakhoroch/View/bikrir_khata.dart';

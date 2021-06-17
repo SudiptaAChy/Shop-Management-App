@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jomakhoroch/Controller/baki_controller.dart';
+import 'package:jomakhoroch/Services/pdf_api.dart';
 import 'package:jomakhoroch/View/contact_list.dart';
 import 'package:jomakhoroch/View/report.dart';
 import 'package:jomakhoroch/View/stock.dart';
@@ -153,8 +154,17 @@ class _BakirKhataState extends State<BakirKhata> {
                               SizedBox(width: 5.0),
                               Expanded(
                                   flex: 2,
-                                  child: Text('পিডিএফ',
-                                      style: TextStyle(color: Colors.green))),
+                                  child: GestureDetector(
+                                    onTap: () async {
+                                      final pdfFile = await PdfApi.generateFile(
+                                          bakiController.bakiList,
+                                          bakiController.totalBaki.toString(),
+                                          bakiController.totalJoma.toString());
+                                      PdfApi.openFile(pdfFile);
+                                    },
+                                    child: Text('পিডিএফ',
+                                        style: TextStyle(color: Colors.green)),
+                                  )),
                               Expanded(
                                   flex: 1,
                                   child: IconButton(
