@@ -1,4 +1,4 @@
-# jomakhoroch
+# SHOP MANAGEMENT APP
 
 This is Shop Management app made with Flutter.
 
